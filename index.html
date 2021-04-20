@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="./all.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Shopping Cart</h1>
+        </header>
+        <main>
+            <section>
+                <ul>
+                    <li>Product Image</li>
+                    <li>Product Name</li>
+                    <li>Price</li>
+                    <li>Quantity</li>
+                    <li>Action</li>
+                    <li>Total</li>
+                </ul>
+            <div class="container">
+                <div id="product1" class="product">
+                    <img src="/res/1616490429507.webp" alt="Product1-img" width="150px">
+                    <p>Playstation 5 Controller </p>
+                    <p class="productPrice">379</p>
+                    <div class=Qtity>
+                        <button type="button" class="decrementBtn">-</button>
+                        <h5 class="QuantityValue">1</h5>
+                        <button type="button" class="incrementBtn">+</button>
+                    </div>
+                    <i class="fas fa-trash"></i>
+                    <p class=total>379</p>
+                </div>
+                <div id="product2" class="product">
+                    <img src="/res/1618568618269.webp" alt="Product2-img" width="150px">
+                    <p>Asus Tuf Curved </p>
+                    <p id="p2-price" class="productPrice">1429</p>
+                    <div class=Qtity>
+                        <button type="button" class="decrementBtn">-</button>
+                        <h5 class="QuantityValue">1</h5>
+                        <button type="button" class="incrementBtn">+</button>
+                    </div>
+                    <i class="fas fa-trash"></i>
+                    <p class=total>1429</p>
+                </div>
+                <div id="product3" class="product">
+                    <img src="/res/1616427776903.webp" alt="Product3-img" width="150px">
+                    <p>Sony Playstation 5 Disc</p>
+                    <p class="productPrice">2899</p>
+                    <div class=Qtity>
+                        <button type="button" class="decrementBtn">-</button>
+                        <h5 class="QuantityValue">1</h5>
+                        <button type="button" class="incrementBtn">+</button>
+                    </div>
+                    <i class="fas fa-trash"></i>
+                    <p class=total>2899</p>
+                </div>
+            </div>
+            </section>
+        <footer>
+            <h2 id="sum">Total Price : 4707 </h2>
+        </footer>
+        </main>
+        <script src="./js/main.js" type="text/javascript"></script>
+    </body>
+</html>
