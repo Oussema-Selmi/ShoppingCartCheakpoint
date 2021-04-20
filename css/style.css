@@ -45,14 +45,17 @@
         }
 
     footer {
-        width: 60%;
+        width: 100%;
         position:absolute;
         top: 650px;
-        left: 40%
         
     }
 
     .Qtity {
         display: flex;
+        justify-content: center;
+        justify-content: space-around;
         height: 15px;
+        width: 8%;
+        height: 10%;
     }
