@@ -3,10 +3,24 @@ for (var i=0;i<trashBtn.length;i++){
     let btn=trashBtn[i]
     btn.addEventListener('click',function(event){
         var btnclicked=event.target
-        btnclicked.parentElement.remove()
+        btnclicked.parentElement.parentElement.remove()
         total()
     })
 }
+
+
+
+var heartBtn=Array.from(document.getElementsByClassName('far fa-heart'))
+for (var i=0;i<heartBtn.length;i++){
+    let btn=heartBtn[i]
+    btn.addEventListener('click',function(){
+        if(btn.style.backgroundColor='#b4b4b4')
+        {btn.style.backgroundColor='red'}
+        else {btn.style.backgroundColor='#b4b4b4'}
+    })
+}
+
+
 
 var plusBtn= document.getElementsByClassName('incrementBtn')
 var QuantityValue=document.getElementsByClassName('QuantityValue')
@@ -39,13 +53,3 @@ function total() {
     }
     return (document.getElementById("sum").innerHTML ="Total Price : " + s + "TND")
   }
-
-
-
-
-
-
-
-
-
-
